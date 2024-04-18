@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul li {
+    display: inline;
+    margin: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+ ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: #114fdf;
+    transition-duration: 0.3s;
+}
+
+section {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Google:hover {
+    background-color: lightcoral;
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    transition-duration: 234ms;
+    text-decoration: none;
+}
+
+#Google {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr {
+    width: 20px;
+    height: 5px;
+    background-color: White;
+}
+
+a {
+    text-decoration: none; /* Removes default underline */
+    position: relative;
+  }
+ 
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; /* Color of the underline */
+    transform: scaleX(0); /* Initially, the underline has no width */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+  }
+ 
+  a:hover::after {
+    transform: scaleX(1); /* Expand the underline on hover */
+  }
